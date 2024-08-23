@@ -1,26 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <FormularioTemplate/>
+  <p hidden>(ᓀ‸ᓂ)</p>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+ import FormularioTemplate from './components/FormularioTemplate.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    FormularioTemplate
+  } 
 }
 </script>
 
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
+} */
 </style>
