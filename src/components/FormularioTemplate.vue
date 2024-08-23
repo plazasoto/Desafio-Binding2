@@ -5,8 +5,12 @@
     <br><hr>
     <label for="emoji">Emoji: </label>
     <select name="emoji" id="emoji" v-model="emoji">
+      <option value="👨‍💻">👨‍💻</option>
+      <option value="👩‍💻">👩‍💻</option>
+      <option value="🦖">🦖</option>
+      <option value="🧑‍💻">🧑‍💻</option>
+      <option value="🙃">🙃</option>
       <option value="(ᓀ‸ᓂ)">(ᓀ‸ᓂ)</option>
-      <option value="ᓀ‸ᓂ">ᓀ‸ᓂ</option>
     </select>
     <br><hr>
     <label >Apreciación: </label>
@@ -39,7 +43,8 @@
     <h2>{{ titulo }}</h2>
     <h3>Y me parece {{ apreciacion }}</h3>
     <h4>He aprendido:<br>{{ competencias.join(", ") }}</h4>
-    <h5>Mi opinión hasta ahora del framework es:<br>{{ opinion }}</h5>
+    <h5>Mi opinión hasta ahora del framework es:</h5>
+    <p>{{ opinion }}</p>
   </article>
   </template>
 
@@ -64,5 +69,8 @@ form{
   background-color: black;
   padding: 2%;
   border-radius: 10px;
+}
+article{
+  text-align: center;
 }
 </style>
